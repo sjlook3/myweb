@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Project-2</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,400,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css'>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.0/flexslider-min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/cm_accessory.css">
+    <link rel="stylesheet" href="css/cm_popup.css">
+    <link rel="stylesheet" href="css/headerT2.css">
+    <!--link rel="stylesheet" href="css/style_prc.css"-->
+    <link rel="stylesheet" href="css/style_proj2.css">
+</head>
+    
+<body>
+    <div id="lay_mask">
+        <!-- 마스크로 띄워질 Div -->
+    </div>
+    <!-- 팝업 라이선스 -->
+    <div id="pop_cclAttribution" class="pop_layer">
+        <a href="javascript:;" class="p_close" onclick="toggleLayer($('#pop_cclAttribution'), 'off');">
+            <svg xmlns="http://www.w3.org/2000/svg" class="ico_close" 
+                 viewBox="0 0 24 24" style="fill: #d0d0d0;">
+                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+            </svg>
+        </a>
+        <div class="article">
+            <div>
+                ※ All of this website is designed, assambled, built by Juluck,Son with below sources.
+            </div><br />
+            <div>
+                <h3>PageScroll</h3>
+                <a class="elpsis" href="https://github.com/javion25/PageScroll.js" target="_blank">https://github.com/javion25/PageScroll.js</a><br />
+                <p>Copyright (c) 2015, Javion</p>
+                <p>MIT License, v0.3.2</p>
+            </div><br />
+            <div>
+                <h3>Flexslider</h3>
+                <a class="elpsis" href="https://github.com/woocommerce/FlexSlider" target="_blank">https://github.com/woocommerce/FlexSlider</a><br />
+                <p>Copyright (c) 2012, WooThemes</p>
+                <p>GPLv2 License</p>
+            </div><br />
+            <div>
+                <h3>Image: on-sea</h3>
+                 Photo by <a href="https://www.pexels.com/photo/few-people-on-sea-2271601/" title="image:on-sea" target="_blank">Humphrey Muleba</a> from Pexels
+            </div><br />
+            <div>
+                <h3>Image: timelapse</h3>
+                 Photo by <a href="https://www.pexels.com/photo/starry-sky-in-timelapse-mode-2264753/" title="image:timelapse" target="_blank">Sahin Sezer Dincer</a> from Pexels
+            </div><br />
+            <div>
+                <h3>Icon: CCL</h3>
+                Icons made by <a href="https://www.flaticon.com/authors/simpleicon" title="icon:CCL" target="_blank">SimpleIcon</a> from <a href="https://www.flaticon.com/" title="Flaticon" target="_blank">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+            </div>
+        </div>
+    </div>
+    <!-- header -->
+    <div id="header">
+        <!-- Ace Responsive Menu -->
+        <nav>
+            <!-- Menu Toggle btn-->
+            <div class="menu-toggle">
+                <!--button type="button" id="menu-btn">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button-->
+              <div class="row cf">
+                  <div class="three col">
+                      <div class="hamburger" id="hamburger-6">
+                          <span class="line"></span>
+                          <span class="line"></span>
+                          <span class="line"></span>
+                      </div>
+                  </div>
+              </div>     
+            </div>
+            <!-- Responsive Menu Structure-->
+            <!--Note: declare the Menu style in the data-menu-style="horizontal" (options: horizontal, vertical, accordion) -->
+            <ul id="respMenu" class="ace-responsive-menu" data-menu-style="horizontal">
+                <li>
+                    <a href="http://sjlucky20.dothome.co.kr/index.html">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <i class="fa fa-cube" aria-hidden="true"></i>
+                        <span class="title">About Us</span>
+
+                    </a>
+                    <!-- Level Two-->
+                    <ul>
+                        <li>
+                            <a href="#">Sub Item One</a>
+                        </li>
+                        <li>
+                            <a href="#">Sub Item Two</a>
+                        </li>
+                        <li>
+                            <a href="#">Sub Item Three</a>
+                        </li>
+                        <li>
+                            <a href="#">Sub Item Four</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="javascript:;">
+                        <i class="fa fa-crop" aria-hidden="true"></i>
+                        <span class="title">4 Level Menu</span>
+                    </a>
+                    <!-- Level Two-->
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                Sub Item One
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-database" aria-hidden="true"></i>
+                                Sub Item Two
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i class="fa fa-amazon" aria-hidden="true"></i>
+                                Sub Item Three
+                            </a>
+                            <!-- Level Three-->
+                            <ul>
+                                <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>Sub Item Link 1</a></li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i class="fa fa-diamond" aria-hidden="true"></i>Sub Item Link 2</a>
+                                    <!-- Level Four-->
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-trash" aria-hidden="true"></i>Sub Item Link 1</a></li>
+                                        <li><a href="#"><i class="fa fa-dashcube" aria-hidden="true"></i>Sub Item Link 2</a></li>
+                                        <li><a href="#"><i class="fa fa-dropbox" aria-hidden="true"></i>Sub Item Link 3</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>Sub Item Link 3</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-database" aria-hidden="true"></i>
+                                Sub Item Four
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="" href="javascript:;">
+                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                        <span class="title">Services</span>
+
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="#">Sub Item One
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">Sub Item Two
+                            </a>
+                            <ul>
+                                <li><a href="#">Sub Item Link 1</a></li>
+                                <li><a href="#">Sub Item Link 2</a></li>
+                                <li><a href="#">Sub Item Link 3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;">Sub Item Three
+                            </a>
+                            <ul>
+                                <li><a href="#">Sub Item Link 1</a></li>
+                                <li><a href="#">Sub Item Link 1</a></li>
+                                <li><a href="#">Sub Item Link 1</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Sub Item Four
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        <span class="title">Products</span>
+                    </a>
+                </li>
+                <li class="last ">
+                    <a href="javascript:;">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <span class="title">Contact Us</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- End of Responsive Menu -->
+    </div>
+    <!-- //header -->        
+    <div id="container">
+        <div class="sections">
+            <div class="section section-1 sticky">
+                <!--h1 class="tit">TEST</h1-->
+                <blockquote>"Lorem ipsum dolor sit placerat"<span id="udline1"></span></blockquote>
+                <img id="office" src="images/img1a_action-aerial-shot-athlete-2271601.jpg">
+                <img id="building" src="images/img2a_art-astronomy-constellation-2264753.jpg">
+                <div id="box"></div>
+            </div>
+            <div class="section section-2">             
+                <div id="wrapper">
+                    <div id="cardStack" class="owl-carousel owl-theme">
+                          <div class="item pricing-table animated">
+                              <div class="header">
+                                  <div class="title">Basic</div>
+                                  <div class="price">$29<span>/mo</span></div>
+                              </div>
+                              <div class="features">
+                                  <ul>
+                                      <li>2GB <span>Disk space</span></li>
+                                      <li>20GB <span>Traffic/mo</span></li>
+                                      <li>512MB <span>Memory</span></li>
+                                      <li>5 Domains <span>+1 Free</span></li>
+                                  </ul>
+                              </div>
+                              <div class="signup">
+                                  <a href="#">Choose plan</a>
+                              </div>
+                          </div>
+                          <div class="item pricing-table featured animated">
+                              <div class="header">
+                                  <div class="title">Standard</div>
+                                  <div class="price">$59<span>/mo</span></div>
+                              </div>
+                              <div class="features">
+                                  <ul>
+                                      <li>4GB <span>Disk space</span></li>
+                                      <li>50GB <span>Traffic/mo</span></li>
+                                      <li>2GB <span>Memory</span></li>
+                                      <li>10 Domains <span>+2 Free</span></li>
+                                  </ul>
+                              </div>
+                              <div class="signup">
+                                  <a href="#">Choose plan</a>
+                              </div>
+                          </div>
+                          <div class="item pricing-table animated">
+                              <div class="header">
+                                  <div class="title">Professional</div>
+                                  <div class="price">$99<span>/mo</span></div>
+                              </div>
+                              <div class="features">
+                                  <ul>
+                                      <li>10GB <span>Disk space</span></li>
+                                      <li>100GB <span>Traffic/mo</span></li>
+                                      <li>4GB <span>Memory</span></li>
+                                      <li>Unlimited Domains</li>
+                                  </ul>
+                              </div>
+                              <div class="signup">
+                                  <a href="#">Choose plan</a>
+                              </div>
+                          </div>
+                    </div>
+                </div>                
+            </div>
+            <div class="section section-3">
+                <div class="flexslider left">
+                    <ul class="slides">
+                        <li>
+                            <img src="images/img_flxslider1.jpg">
+                            <div class="meta">
+                                <h1>1__Lorem ipsum dolor sit amet, consectetur.</h1>
+                                <h2>Lorem ipsum dolor sit.</h2>
+                                <div class="category">
+                                    <p>$286600</p>
+                                    <span>Category</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/img_flxslider2.jpg">
+                            <div class="meta">
+                                <h1>2__Lorem ipsum dolor sit amet, consectetur.</h1>
+                                <h2>Lorem ipsum dolor sit.</h2>
+                                <div class="category">
+                                    <p>$415000</p>
+                                    <span>Category</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/img_flxslider3.jpg">
+                            <div class="meta">
+                                <h1>3__Lorem ipsum dolor sit amet, consectetur.</h1>
+                                <h2>Lorem ipsum dolor sit.</h2>
+                                <div class="category">
+                                    <p>$415000</p>
+                                    <span>Category</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/img_flxslider4.jpg">
+                            <div class="meta">
+                                <h1>4__Lorem ipsum dolor sit amet, consectetur.</h1>
+                                <h2>Lorem ipsum dolor sit.</h2>
+                                <div class="category">
+                                    <p>$415000</p>
+                                    <span>Category</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="section section-4">
+                    <div id="map">
+                        <button type="button" id="draggable"><i class="fa fa-arrows-alt"></i></button>
+                    </div>
+                    <div class="anima-10">
+                        <div class="animated">
+                            <div class="hspot">
+                                <i class="fa fa-info-circle" aria-hidden="true" style="font-size:50px; color:#7f9aa7;"></i>
+                                <!--span class="aniIcon">&#9851;</span-->
+                                <!--h3>▶ Flip One</h3-->
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis lacinia est. Nulla malesuada massa orci, vitae placerat lorem pharetra a.</p>
+                        </div>
+                    </div>
+                    <div class="funky-animations">
+                        <div>
+                            <h4>Click Me</h4>
+                        </div>
+                    </div>
+            </div>
+            <div class="section section-5">
+                <!-- Click animations section -->
+                <div class="click-animations">
+                  <!--h2 class="new-section">Inquiry</h2-->
+                    <div class="scroll-viewport">
+                        <form>
+                            <input type="text" placeholder="Name" id="name" />
+                            <input type="text" placeholder="Email" id="email" />
+                            <textarea rows="7" placeholder="Message" id="message"></textarea>
+                        </form>
+                        <button>Send</button>
+                    </div>
+                    </div>
+                <footer>
+                    <div class="flxs">
+                        <p class="notice">
+                            All of this website is designed, assambled, built by Juluck,Son.<br>With support for IE11 & latest versions of Chrome and Firefox.
+                        </p>
+                    </div>
+                    <a class="btnT1" href="javascript:toggleLayer($('#pop_cclAttribution'), 'on');">
+                        <svg version="1.1" class="btnT1_ico" id="CCL_ico" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 430.1 430.1" style="enable-background:new 0 0 430.1 430.1;" xml:space="preserve">
+                            <g>
+                                <path id="Creative_Commons" d="M216.8,215.1c0-41.9,27.9-66.7,63-66.7c24.1,0,44.8,8.8,57,31l-28.6,15 c-6.7-14.3-18.1-17.4-23.9-17.4c-21.2,0-28.9,16.4-28.9,38.1c0,21.7,9.1,38.1,28.9,38.1c11.5,0,20.5-4.3,26.5-18.6l26.7,13.6 c-11.4,20.2-32.2,33.6-56.5,33.6C243.1,281.8,216.8,257.7,216.8,215.1z M156.8,281.8c24.3,0,45.1-13.3,56.5-33.6l-26.7-13.6 c-6,14.3-15,18.6-26.5,18.6c-19.8,0-28.9-16.4-28.9-38.1c0-21.7,7.6-38.1,28.9-38.1c5.7,0,17.2,3.1,23.9,17.4l28.6-15 c-12.2-22.2-32.9-31-57-31c-35.1,0-63,24.8-63,66.7C92.6,257.7,118.8,281.8,156.8,281.8z M63.1,366.5C21.8,325.2,0,272.2,0,215.1 c0-56.6,22.4-110.8,63.7-152.6C103.8,21.8,155.8,0,214.8,0s112.1,21.8,153.4,63c40.7,40.7,61.9,93.7,61.9,152 c0,58.9-21.2,111.4-61.4,150.8c-42.5,41.8-97.4,64.2-154,64.2C158.1,430.1,104.4,407.7,63.1,366.5z M38.9,215.1 c0,46,18.9,90.1,52.5,123.7c33.6,33.6,77.3,51.8,123.9,51.8c46,0,90.9-18.3,125.7-52.4c33-32.4,50.1-74.8,50.1-123.1 c0-47.7-17.7-91.3-50.7-124.3c-33.6-33.6-76.7-51.8-125.1-51.8c-48.4,0-90.9,17.7-123.9,51.3C57.8,124.3,38.9,168.5,38.9,215.1z" />
+                            </g>
+                        </svg>
+                        <span>Attribution</span>
+                    </a>
+                </footer>
+            </div>
+        </div>
+    </div> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.0/jquery.flexslider-min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.8/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=82462b7dd241b711a4ed63d444a1a20a&libraries=services"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/cm_common.js"></script>
+    <script src="js/headerT2.js"></script>
+    <script src="js/proj2.js"></script>
+    <script>
+
+        
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+    /*window.addEventListener('resize', () => {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+    });*/  
+        
+    setTimeout(function () {
+        let viewheight = window.innerHeight;  
+        let viewwidth = window.innerWidth;
+        let viewport = document.querySelector("meta[name=viewport]");
+        viewport.setAttribute("content", "height=" + viewheight + "px, width=" + viewwidth + "px, initial-scale=1.0");
+    }, 300);        
+        
+        $('#container').PageScroll({
+            selectors: {
+                sections: ".sections",
+                section: ".section",
+                insection: ".insection",
+                page: ".pages",
+                active: ".active",
+                controlPrev: ".control-prev",
+                controlNext: ".control-next"
+            },
+
+            index: 0,
+            easing: "ease",
+            duration: 500,
+            loop: false,
+            pagination: true,
+            keyboard: true,
+            direction: "vertical",
+            callback: ""
+        });
+        //$("#container").PageScroll("init");
+         
+    </script>
+    <!--Plugin Initialization-->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#respMenu").aceResponsiveMenu({
+                resizeWidth: '768', // Set the same in Media query       
+                animationSpeed: 'fast', //slow, medium, fast
+                accoridonExpAll: false //Expands all the accordion menu on click
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    
+    <script>
+        $('#cardStack').owlCarousel({
+            
+            loop: true,
+            nav: false,
+            dots: false,
+            responsive: {            
+                0: {
+                    center: true,
+                    items: 2,
+                    margin: 20,
+                },
+                
+                769: {
+                    center: false,
+                    items: 3,
+                    margin: 30,
+                }
+            }
+        })
+    </script>
+    <script>
+        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+            mapOption = {
+                center: new daum.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+                level: 3 // 지도의 확대 레벨
+            };
+
+        // 지도를 생성합니다    
+        var map = new daum.maps.Map(mapContainer, mapOption);
+
+        // 주소-좌표 변환 객체를 생성합니다
+        var geocoder = new daum.maps.services.Geocoder();
+
+        // 주소로 좌표를 검색합니다
+        geocoder.addressSearch('서울특별시 강남구 테헤란로 440', function(result, status) {
+
+            // 정상적으로 검색이 완료됐으면 
+            if (status === daum.maps.services.Status.OK) {
+
+                var coords = new daum.maps.LatLng(result[0].y, result[0].x);
+
+                // 결과값으로 받은 위치를 마커로 표시합니다
+                var marker = new daum.maps.Marker({
+                    map: map,
+                    position: coords
+                });
+
+                // 인포윈도우로 장소에 대한 설명을 표시합니다
+                var infowindow = new daum.maps.InfoWindow({
+                    content: '<div style="width:150px;text-align:center;padding:6px 0;">○○ 주식회사</div>'
+                });
+                infowindow.open(map, marker);
+
+                // 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
+                map.setCenter(coords);
+                
+                setDraggable(false);
+                  
+            }
+        });
+        
+        
+        let map_wrapper = document.getElementById('map_wrapper'); 
+        let btn_draggable = document.getElementById('draggable');
+        let btn_draggable_ico = document.querySelector('#draggable .fa');
+        let textexample = document.getElementById('textexample');
+        let insPagescroll = $('#container').data('PageScroll');
+        
+        let mapAction = (function(){    
+            
+            var isDrag = !0;
+
+            return function(){
+                   
+                if(isDrag){
+                    btn_draggable_ico.setAttribute('class', 'fa fa-ban');
+                    setDraggable(true);
+                    insPagescroll.pause();                   
+                    
+                } else {
+                    btn_draggable_ico.setAttribute('class', 'fa fa-arrows-alt');
+                    setDraggable(false);
+                    insPagescroll.resume();  
+                }
+                
+                isDrag = !isDrag;
+            };
+            
+        })();
+        
+        btn_draggable.onclick = mapAction;
+                
+        function setDraggable(draggable) {
+        // 마우스 드래그로 지도 이동 가능여부를 설정합니다
+        map.setDraggable(draggable);
+        }   
+    </script>
+</body>
+</html>

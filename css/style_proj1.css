@@ -1,0 +1,577 @@
+html {
+    font-size: 14px;
+
+}
+
+body {
+    font-weight: 400;
+    line-height: 1.15;
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+ .sect1 {
+     position: relative;
+     overflow: hidden;
+     background-color: #f6f6f6
+ }
+
+ .sect1 .image {
+     position: absolute;
+     left: 50%;
+     background-repeat: no-repeat;
+     background-position: center
+ }
+
+ .sect1 .text-wrapper {
+     position: relative;
+     top: 0px;
+     left: 50%;
+     max-width: 340px;
+ }
+
+
+@keyframes showTopText {
+  0% {
+    -webkit-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);  
+    transform: translate3d(0, 100%, 0);
+  }
+  40%, 60% {
+    -webkit-transform: translate3d(0, 50%, 0);
+    -ms-transform: translate3d(0, 50%, 0);  
+    transform: translate3d(0, 50%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0); 
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes showBottomText {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0);
+    -ms-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);   
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animated-title {
+  color: #ffcc6d;
+  /*ont-family: Roboto, Arial, sans-serif;*/    
+  height: 100vmin;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);    
+  width: 90vmin;
+}
+
+
+
+
+
+.animated-title > div {
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+.animated-title > div div {
+  font-size: 50px;
+  padding: 10px 0;
+  position: absolute;
+}
+
+.animated-title > div div span {
+  display: block;
+}
+
+.animated-title > div.text-top {
+  border-bottom: 1vmin solid #000;
+  top: 0;
+}
+
+.animated-title > div.text-top div {
+  animation: showTopText 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  -webkit-transform: translate(0, 100%);
+  -ms-transform: translate(0, 100%);     
+  transform: translate(0, 100%);
+}
+
+.animated-title > div.text-top div span:first-child {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: 'Cookie', monospace;    
+  /*font-weight: bold;*/  
+}
+
+.animated-title > div.text-bottom {
+  bottom: 0;
+}
+
+.animated-title > div.text-bottom div {
+  animation: showBottomText 0.5s;
+  animation-delay: 1.75s;
+  animation-fill-mode: forwards;
+  top: 0;
+  -webkit-transform: translate(0, -100%);
+  -ms-transform: translate(0, -100%);    
+  transform: translate(0, -100%);    
+}
+
+
+
+
+
+ .sect2 .item:nth-child(1) {
+
+     background-color: white;
+ }
+
+ .sect2 .item:nth-child(2) {
+
+     background-color: #30323e;    
+ }
+
+ .sect2 .item:nth-child(3) {
+
+     background-color: lightblue;
+ }
+
+
+
+
+
+ .scrollmagic-pin-spacer {
+     position: absolute !important;
+     -webkit-clip: rect(auto, auto, auto, auto);
+     clip: rect(auto, auto, auto, auto);
+ }
+
+
+ .sect2 .item {
+     position: relative;
+     z-index: 0;
+     overflow: hidden;
+     height: 100vh;
+     max-height: 1078px;
+     background: no-repeat center;
+ }
+
+
+ .sect2 .item .pin-wrapper {
+     width: 100%;
+     height: 100%;
+     -webkit-transform: translateZ(0);
+     transform: translateZ(0);
+ }
+
+
+ .sect2 .item .image {
+     position: absolute;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     margin-top: -100px;
+     width: 100%;
+     height: 45vh
+ }
+
+ .sect2 .item .content-wrapper {
+     position: absolute;
+     margin: 20px;
+     margin-top: 80px; 
+     max-width: 350px;
+     /*-webkit-transform: translate(180px, -99px);
+     -moz-transform: translate(180px, -99px); 
+     -ms-transform: translate(180px, -99px); 
+     -o-transform: translate(180px, -99px);
+     transform: translate(180px, -99px);*/   
+ }
+
+
+
+.sect2 .item h2 {
+    margin-bottom: 17px;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.sect2 .item p {
+    line-height: 1.5;
+}
+
+.sect2 .item.is-B h2,
+.sect2 .item.is-B p {
+    color: white;    
+}
+
+
+
+
+
+.sect2 .item .image {
+    top: 60%;
+}
+
+
+/*
+.sect2 .item .image {
+    top: -40%;
+}
+*/
+
+.sect2 .item.is-A .content-wrapper {
+    top: 0%;
+    max-width: 290px
+}
+
+.sect2 .item.is-B .content-wrapper {
+    top: 0%;
+    max-width: 290px
+}
+
+.sect2 .item.is-C .content-wrapper {
+    top: 0%;
+    max-width: 290px
+}
+
+/*
+.sect2 .item.is-B .content-wrapper {
+    top: -100%
+}
+
+.sect2 .item.is-C .content-wrapper {
+    top: -100%
+}
+*/
+
+
+.sect2 .item.is-A .image {
+    background-image: url(../images/Gogh_self-portrait_1889.jpg)
+}
+
+.sect2 .item.is-B .image {
+    background-image: url(../images/Gogh-facebookJumbo-v2.jpg)
+}
+
+.sect2 .item.is-C .image {
+    background-image: url(../images/Gogh-Sunflower1962.jpg)
+}
+
+
+.sect2 .content-wrapper {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.sect2 .content-wrapper.fade-in {
+    opacity: 1;
+    
+}
+
+
+.sect3 {
+    position: relative;
+    background-color: #fff;
+}
+
+.sect3 .project .info {
+    
+    margin-top: 20px;
+}
+
+.project { 
+    text-align: center; 
+    /*padding: 160px 0;*/
+    border-bottom: 1px #ebebeb solid;
+    opacity: 0;
+    /*transform: translateY(50px);*/
+    transition: all 3s ease-out;
+}
+
+.project.fade-in {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+
+.project h2 {
+    font-size: 20px;
+}
+
+
+#project03 i {
+    font-size: 120px;
+    color: grey;   
+}
+
+
+
+/*@@@@
+* {
+  box-sizing: border-box;
+}
+*/
+body {
+  /*background-color: #f5f5f5;*/
+  /*font-family: 'Karla', sans-serif;*/
+}
+
+.content.popover {
+  max-width: 550px;
+  padding: 40px;
+  margin: 40px auto;
+}
+
+.content.popover > h1 {
+  margin: 0 0 20px 0;
+  font-family: 'Cookie', monospace;
+  font-size: 60px;
+}
+
+.content.popover > p {
+  line-height: 1.7;
+  margin: 0;
+}
+
+.content.popover > p > a {
+  color: black;
+  font-weight: 700;
+}
+
+.content.popover > p > a:hover {
+  background-color: #ffe0b2;
+}
+
+.hover-content {
+  padding: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  background-color: #fff;
+  width: 240px;
+}
+
+[data-hover-wrapper] {
+  transition: opacity .3s, -webkit-transform .3s;
+  transition: opacity .3s, transform .3s;
+  transition: opacity .3s, transform .3s, -webkit-transform .3s;
+}
+
+.hover-content > img {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.hover-content > p {
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* --@@@--*/
+
+
+
+
+.bcg-parallax {
+    padding: 250px 0;
+    color: #fff;
+    background-color: #000;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.bcg-parallax .bcg {
+    background: url('../images/Gogh%201888%20Starry%20Night%20over%20the%20Rhone%201.jpg') no-repeat;
+    background-size: cover;
+    background-position: 50% 90%;
+    position: absolute;
+    width: 100%;
+    height: 180%;
+    top: 0;
+    z-index: 1;
+    opacity: 0.7;
+}
+
+.content-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1140px;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+.bcg-parallax2 {
+    padding: 150px 0;
+    color: #fff;
+    background-color: #000;
+    position: relative;
+    overflow: hidden;    
+}
+
+.bcg-parallax2 .bcg {
+    background: url('../images/Gogh_The_Night_Cafe.jpg') no-repeat;
+    background-size: cover;
+    background-position: 50% 90%;
+    position: absolute;
+    width: 100%;
+    height: 180%;
+    top: 0;
+    z-index: 1;
+    opacity: 0.7;
+}
+
+
+.content-wrapper2 {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1140px;
+    position: relative;
+    z-index: 2;
+}
+
+
+.content-wrapper2 > h1 {
+    margin: 0 0 20px 0;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: 'Cookie', monospace;
+    font-size: 50px;
+}
+
+
+
+/* over iPad width --------------------------------------------------------------------------*/
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 100%;
+    }
+
+    .bcg {
+        background-position: 30% 40%;
+    }
+    
+     .sect2 .item .image {
+     width: 70%;
+     height: 40vh
+     }
+    
+    .sect2 .item .content-wrapper {
+     margin: 20px;    
+     margin-top: 150px;
+     margin-left: 400px;    
+     }
+    
+     .sect2 .item .image {
+    top: 50%;
+    }
+    
+
+}
+
+/* over iPad height--------------------------------------------------------------------------*/
+@media screen and (min-width: 1025px) {
+
+    
+    .bcg {
+        background-position: 0% 40%;
+    }
+
+    
+    .sect2 .item .image {
+        top: 50%;
+        margin-top: -240px;
+    }
+    
+    .sect2 .item .image {
+        left: 50%;
+        margin-top: -240px;
+        margin-left: -527px;
+        width: 691px;
+        height: 463px
+    }
+    
+    
+
+    .sect2 .item .content-wrapper {
+        
+        left: 50%;
+        max-width: 350px;
+        -webkit-transform: translate(180px, -99px);
+        transform: translate(180px, -99px);
+
+        margin: 0px;
+    }
+    
+    .sect2 .item.is-A .content-wrapper,
+    .sect2 .item.is-B .content-wrapper,
+    .sect2 .item.is-C .content-wrapper{
+        
+        top: 45%;
+        max-width: 290px
+    }
+    
+    
+    .sect2 .item h2 {
+        margin-bottom: 17px;
+        font-size: 52px;
+        font-weight: bold;
+        line-height: 1;
+    }
+
+    .sect2 .item p {
+        line-height: 1.5;
+    }
+    
+    
+        
+    .sect2 .item.is-A.overlap .image {
+        top: 50%;
+        margin-top: -240px;
+    }
+    
+    .sect2 .item.overlap .image {
+        top: -50%;
+    }
+    
+   
+    .sect2 .item.is-A.overlap .content-wrapper {
+        top: 45%;
+        max-width: 290px
+    }
+
+    .sect2 .item.is-B.overlap .content-wrapper,
+    .sect2 .item.is-C.overlap .content-wrapper{
+    
+        top: -55%
+    }
+    
+ 
+
+    .project {
+        /*padding: 200px 0;*/
+    }
+
+    #project03 i {
+        font-size: 150px;
+    }
+
+}

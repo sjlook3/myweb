@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<title>KOREX</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.touchSwipe.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<!-- header -->
+		<div id="header">
+			<div class="inr">
+				<h1 class="logo"><a href="../index.html"><em class="blind">KOREX</em></a></h1>
+				<div class="menu">
+					<a class="n1" href="#n">뉴스</a>
+					<a class="n2" href="#n">분양 물건</a>
+					<a class="n3 on" href="#n">마이페이지</a>
+				</div>
+			</div>
+			<!-- 모바일 메뉴 -->
+			<a href="#n" class="m_menu openMenu"><span class="blind">전체메뉴</span></a>
+			<div class="nav">
+				<div class="inner">
+					<div class="n_top">
+						<a href="#n">로그인</a>
+						<a href="#n">회원가입</a>
+					</div>
+					<ul class="n_list">
+						<li><a href="#n">뉴스</a></li>
+						<li><a href="#n">분양 물건</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="dim"></div>
+			<!-- //모바일 메뉴 -->
+		</div>
+		<!-- //header -->
+		<!-- content -->
+		<div id="content">
+			<div class="inr">
+				<!-- 마이페이지 -->
+				<div class="mypage">
+					<p class="title">마이페이지</p>
+					<div class="mp_bx">
+						<!-- 프로필 -->
+						<div class="profile">
+							<div class="pic"><img src="images/profile.png" alt=""></div><!-- 이미지 사이즈 w110, h110  -->
+							<p class="name"><strong>홍길동</strong></p>
+							<a href="#n" class="b_edit">프로필사진 수정</a>
+						</div>
+						<!-- 회원정보 수정 -->
+						<div class="edit_bx">
+							<p class="e_tit">회원정보 수정</p>
+							<div class="ebx">
+								<p class="tit2">개업공인중개사 회원</p>
+								<div class="form">
+									<p class="ftt">이메일</p>
+									<div class="finp">
+										<input type="text" class="inp" title="이메일" value="abc@gmail.com">
+									</div>
+									<p class="ftt">비밀번호</p>
+									<div class="finp bwrap">
+										<input type="password" class="inp" title="비밀번호">
+										<span class="btn b_edit"><button>변경</button></span>
+									</div>
+									<p class="ftt">비밀번호 확인</p>
+									<div class="finp">
+										<input type="password" class="inp" title="비밀번호 확인">
+									</div>
+									<p class="ftt">사업자명</p>
+									<div class="finp">
+										<input type="text" class="inp" title="사업자명">
+									</div>
+									<p class="ftt">사업자 번호</p>
+									<div class="finp">
+										<input type="text" class="inp" title="사업자 번호">
+									</div>
+									<p class="ftt">대표자명</p>
+									<div class="finp">
+										<input type="text" class="inp" title="대표자명">
+									</div>
+									<p class="ftt">휴대폰 번호</p>
+									<div class="finp bwrap">
+										<input type="text" class="inp" title="휴대폰 번호">
+										<span class="btn b_edit"><button>변경</button></span>
+									</div>
+								</div>
+							</div>
+							<div class="ebx st2">
+								<p class="tit">전문분야</p>
+								<div class="form">
+									<p class="sec_tit">물건</p>
+									<ul class="chk_list st2">
+										<li><input type="checkbox" name="aa" id="a1"><label for="a1">아파트 단지</label></li>
+										<li><input type="checkbox" name="aa" id="a2"><label for="a2">상가</label></li>
+										<li><input type="checkbox" name="aa" id="a3"><label for="a3">고급빌라</label></li>
+										<li><input type="checkbox" name="aa" id="a4"><label for="a4">주택</label></li>
+										<li><input type="checkbox" name="aa" id="a5"><label for="a5">사무실</label></li>
+										<li><input type="checkbox" name="aa" id="a6"><label for="a6">오피스텔</label></li>
+										<li><input type="checkbox" name="aa" id="a7"><label for="a7">한옥</label></li>
+										<li><input type="checkbox" name="aa" id="a8"><label for="a8">지식산업센터</label></li>
+										<li><input type="checkbox" name="aa" id="a9"><label for="a9">공장</label></li>
+										<li><input type="checkbox" name="aa" id="a10"><label for="a10">토지</label></li>
+										<li><input type="checkbox" name="aa" id="a11"><label for="a11">펜션</label></li>
+										<li><input type="checkbox" name="aa" id="a12"><label for="a12">콘도</label></li>
+										<li><input type="checkbox" name="aa" id="a13"><label for="a13">호텔</label></li>
+									</ul>
+								</div>
+								<div class="form line">
+									<p class="sec_tit">거래</p>
+									<ul class="chk_list st2">
+										<li><input type="checkbox" name="bb" id="b1"><label for="b1">분양</label></li>
+										<li><input type="checkbox" name="bb" id="b2"><label for="b2">경매</label></li>
+										<li><input type="checkbox" name="bb" id="b3"><label for="b3">외국인</label></li>
+									</ul>
+								</div>
+								<div class="form line">
+									<p class="sec_tit">서비스</p>
+									<ul class="chk_list st2">
+										<li><input type="checkbox" name="cc" id="c1"><label for="c1">자산관리</label></li>
+										<li><input type="checkbox" name="cc" id="c2"><label for="c2">건축</label></li>
+										<li><input type="checkbox" name="cc" id="c3"><label for="c3">인테리어</label></li>
+										<li><input type="checkbox" name="cc" id="c4"><label for="c4">개발</label></li>
+										<li><input type="checkbox" name="cc" id="c5"><label for="c5">컨설팅</label></li>
+									</ul>
+								</div>
+							</div>
+							<div class="ebx">
+								<p class="leave"><a href="#n">회원탈퇴</a></p>
+								<span class="btn b_comfirm"><button>수정완료</button></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //마이페이지 -->
+			</div>
+		</div>
+		<!-- //content -->
+		<!-- footer -->
+		<div id="footer">
+			<!-- korex detail -->
+			<div class="k_detail">
+				<div class="inr">
+					<ul class="dm">
+						<li><a href="#n">KOREX 소개</a></li>
+						<li><a href="#n">전문공인중개사</a></li>
+						<li><a href="#n" target="_blank" title="새창으로 열기">이용약관</a></li>
+						<li><a href="#n" target="_blank" title="새창으로 열기">개인정보 처리방침</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="inr">
+				<div class="f_logo"><em class="blind">KOREX korea real estate exchange</em></div>
+				<div class="info">
+					<p>한국부동산사업협동조합(중소기업중앙회, 소상공인연합회)  l  이사장 : 권순종</p>
+					<address>서울시 강남구 봉은사로 34길 20 아우라빌딩 1층  l  대표전화 : 02-565-0060  FAX : 02-565-0958</address>
+					<p>고유번호 : 201-82-08085</p>
+				</div>
+				<div class="copy">© 2018 한국부동산사업협동조합. All rights reserved.</div>
+			</div>
+		</div>
+		<!-- //footer -->
+	</div>
+</body>
+</html>

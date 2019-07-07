@@ -1,0 +1,81 @@
+/*
+#lay_mask{ position:absolute; background:black; z-index:100; opacity:0.5; filter:alpha(opacity=50); background:rgba(0,0,0,.5); filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#4C000000, endColorstr=#4C000000) }
+.PopupLayer { position: absolute; z-index: 110; }
+*/
+#lay_mask {
+    display: none;
+    position: fixed;
+    background: #242424;
+    opacity: 0.57;
+    filter: alpha(opacity=57);
+    z-index: 20001;
+}
+
+
+.active_Popup {
+    position: fixed;
+    z-index: 20001;
+    background: #fff;
+}
+
+.pop_layer {
+    position: absolute;
+    width: 90%;
+    visibility: hidden;
+    overflow: hidden;
+    top: -9999px;
+    box-sizing: border-box;
+}
+
+.pop_layer {
+    color: black;
+    background: #fff;
+    -webkit-box-shadow: 2px 3px 10px 0px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 2px 3px 10px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 2px 3px 10px 0px rgba(0, 0, 0, 0.16);
+}
+
+.pop_layer .p_close {
+    float: right;
+}
+
+.pop_layer .ico_close {    
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
+
+.pop_layer .article {
+    padding: 30px 15px 30px 15px;
+    box-sizing: border-box;
+}
+
+.blind,
+.hidden {
+    visibility: hidden;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0
+}
+
+
+
+/* over iPad width --------------------------------------------------------------------------*/
+@media screen and (min-width: 768px) {
+    
+    .pop_layer { width: 430px;}
+    
+}
+
+/* over iPad height--------------------------------------------------------------------------*/
+@media screen and (min-width: 1025px) {
+    
+
+           
+}
+
